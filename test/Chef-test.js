@@ -72,13 +72,13 @@ describe("Chef (class)", function() {
       type: "breakfast"
     };
 
-// console.log(chef);
+console.log(chef);
 
     addMenuItem(chef.restaurant, foodItem1);
     addMenuItem(chef.restaurant, foodItem2);
 
-// console.log(chef);
-// console.log(chef.restaurant.menus.breakfast);
+console.log(chef);
+console.log(chef.restaurant.menus.breakfast);
 
     var foodConfirmation1 = chef.checkForFood(foodItem1);
     var foodConfirmation2 = chef.checkForFood(foodItem2);

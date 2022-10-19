@@ -13,6 +13,17 @@ function createRestaurant(name) {
 // Used if and else if statements to determine if the newItem matches one
 // of the three menus and add it to that menu only if its not in there already
 // by using &&(logcal AND operator) !(logical NOT operator).
+
+// Also, in the feedback they showed a way that was much better to do this function
+// that I really liked. They used the bang operate ! (NOT) and [menuItem.type]
+// to check each menu instead of making two more "else if" statments.
+
+// function addMenuItem(restaurant, menuItem) {
+//   if (!restaurant.menus[menuItem.type].includes(menuItem)) {
+//     restaurant.menus[menuItem.type].push(menuItem);
+//   } 
+// };
+
 function addMenuItem(restaurant, newItem) {
   if (newItem.type === "breakfast" && !restaurant.menus.breakfast.includes(newItem)) {
     restaurant.menus.breakfast.push(newItem);
